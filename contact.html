@@ -9,7 +9,25 @@
   <link rel="stylesheet" href="./stylesheets.css" />
   <body>
     <h1>Contact Details:</h1>
-    <p>phone number: 086 293 7944 <br />email : fatimagalant@outlook.com</p>
+    <form action="https://formspree.io/f/xpzbyqnz" method="POST">
+      <label>
+        Your email:
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Your number
+        <textarea name="number"></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <label>
+        Booked dates
+        <input type="date" name="date" id="date">
+      </label>
+      <label>
+        Times
+        <input type="time" name="time" id="time">
+      <button type="submit">Send</button>
+    </form>
     <a href="index.html">Home Page</a>
   </body>
 </html>
